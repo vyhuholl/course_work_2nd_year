@@ -22,11 +22,11 @@ with open('nouns sharp.txt', encoding = 'cp1251') as wordlist:
             url = commonUrl + '%5Blemma+%3D+%22' + sharp + '%22%5D+%5Blemma+%3D+%22' + word + '%22%5D&default_attr=word'
             print(url)
             page = download_page(url)
-            number = re.search('"(.*?) occurrences', page)
+           number = re.search('"(.*?) hits', page)
             print(number)
             try:
                 number = number[1:]
-                number = number[:-12]
+                number = number[:-5]
                 number = int(number)
                 example = re.search('<td class="lc "(.*?)</td>', page) + sharp + re.search('<td class="rc "(.*?)</td>', page)
                 example = re.sub('', regTag, example)
