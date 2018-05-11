@@ -1,8 +1,8 @@
-нож veitsi
-меч miekka
-коготь kynsi
-сабля sapeli
-лезвие terä
+нож veitsi +
+меч miekka +
+коготь kynsi -
+сабля sapeli +
+лезвие terä 
 коса viikate
 ножницы sakset
 пила saha
@@ -113,7 +113,6 @@
 грипп influenssa 
 заболевание sairaus 
 расстройство häiriö
-аппендицит umpilisäkkeen tulehdus 
 момент hetki 
 сопротивление vastarinta 
 спор riita 
