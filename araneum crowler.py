@@ -170,7 +170,7 @@ with open('nouns smooth.txt', encoding = 'utf-8') as wordlist_smooth_n:
                     smooth_worksheet1.write(i_smooth, 1, 'финский')
                     smooth_worksheet1.write(i_smooth, 2, 'гладкий' + translation)
                     smooth_worksheet1.write(i_smooth, 3, word)
-                    smooth_worksheet1.write(i_smooth, 6, 'острый')
+                    smooth_worksheet1.write(i_smooth, 6, 'гладкий')
                     smooth_worksheet1.write(i_smooth, 8, example)
                     smooth_worksheet2.write(i + 1, j + 2, ' +')
                     i_smooth += 1
