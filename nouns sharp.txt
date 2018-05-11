@@ -1,7 +1,7 @@
-нож veitsi +
-меч miekka +
-коготь kynsi -
-сабля sapeli +
+нож veitsi
+меч miekka
+коготь kynsi
+сабля sapeli
 лезвие terä 
 коса viikate
 ножницы sakset
