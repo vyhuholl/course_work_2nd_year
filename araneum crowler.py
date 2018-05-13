@@ -3,9 +3,12 @@ import re
 import xlsxwriter
 
 def download_page(pageUrl):
-    page = urllib.request.urlopen(pageUrl)
-    text = (page.read()).decode('utf-8')
-    return text
+    try:
+        page = urllib.request.urlopen(pageUrl)
+        text = codecs.decode(page.read(), encoding = 'utf-8')
+        return text
+    except:
+        return('Error')
 
 commonUrl = 'http://aranea.juls.savba.sk/guest/run.cgi/first?corpname=AranFinn_x&reload=&iquery=&queryselector=cqlrow&lemma=&lpos=&phrase=&word=&wpos=&char=&cql='
 wordlist_sharp = ['ter%C3%A4v%C3%A4', 'jyrkk%C3%A4', 'vihlova', 'tarkka', 'korotettu', 'kirpe%C3%A4', 'kipakka', 'ter%C3%A4v%C3%A4kulmainen', 'yl%C3%A4vireinen', '%C3%A4t%C3%A4kk%C3%A4', 'pist%C3%A4v%C3%A4', 'k%C3%A4rjek%C3%A4s', 'fiksu', 't%C3%A4sm%C3%A4llinen', 'ankara', 'tuima', 'tyylik%C3%A4s']
