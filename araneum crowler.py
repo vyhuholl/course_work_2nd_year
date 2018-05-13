@@ -1,11 +1,10 @@
 import urllib.request
 import re
 import xlsxwriter
-import codecs
 
 def download_page(pageUrl):
     page = urllib.request.urlopen(pageUrl)
-    text = codecs.decode(page.read(), encoding = 'utf-8')
+    text = (page.read()).decode('utf-8')
     return text
 
 commonUrl = 'http://aranea.juls.savba.sk/guest/run.cgi/first?corpname=AranFinn_x&reload=&iquery=&queryselector=cqlrow&lemma=&lpos=&phrase=&word=&wpos=&char=&cql='
