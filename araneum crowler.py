@@ -97,7 +97,7 @@ with open('nouns sharp.txt', encoding = 'utf-8') as wordlist_sharp_n:
                     sharp_worksheet1.write(i_sharp, 3, word)
                     sharp_worksheet1.write(i_sharp, 6, 'острый')
                     sharp_worksheet1.write(i_sharp, 8, example)
-                    sharp_worksheet2.write(i + 1, j + 2, ' +')
+                    sharp_worksheet2.write(i + 1, j + 2, freq)
                     i_sharp += 1
 
 with open('nouns size.txt', encoding = 'utf-8') as wordlist_size_n:
@@ -136,7 +136,7 @@ with open('nouns size.txt', encoding = 'utf-8') as wordlist_size_n:
                     size_worksheet1.write(i_size, 3, word)
                     size_worksheet1.write(i_size, 6, 'размер')
                     size_worksheet1.write(i_size, 8, example)
-                    size_worksheet2.write(i + 1, j + 2, ' +')
+                    size_worksheet2.write(i + 1, j + 2, freq)
                     i_size += 1
 
 with open('nouns smooth.txt', encoding = 'utf-8') as wordlist_smooth_n:
@@ -172,7 +172,7 @@ with open('nouns smooth.txt', encoding = 'utf-8') as wordlist_smooth_n:
                     smooth_worksheet1.write(i_smooth, 3, word)
                     smooth_worksheet1.write(i_smooth, 6, 'гладкий')
                     smooth_worksheet1.write(i_smooth, 8, example)
-                    smooth_worksheet2.write(i + 1, j + 2, ' +')
+                    smooth_worksheet2.write(i + 1, j + 2, freq)
                     i_smooth += 1
 
 questionnaire_sharp.close()
